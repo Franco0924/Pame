@@ -1,0 +1,123 @@
+{
+  "project_title": "Pamela González — Fisioterapeuta Motion Portfolio 3D",
+  "archetype": "ORGANIC & LUXURY (Quiet Luxury, Biomechanical & Editorial)",
+  "language": "Spanish (es-CR)",
+  "context_type": "Marketing / High-End Motion Portfolio",
+  "theme": {
+    "default": "dark",
+    "background_main": "#0E1412",
+    "surface": "#151D1A",
+    "surface_light": "#EFE9DF",
+    "accent_sage": "#8FAF9A",
+    "accent_copper": "#C9936B",
+    "text_dark_theme": "#EFE9DF",
+    "text_light_theme": "#0E1412",
+    "text_muted": "#8EA096",
+    "border_dark": "rgba(143, 175, 154, 0.15)",
+    "border_light": "rgba(14, 20, 18, 0.12)"
+  },
+  "typography": {
+    "headline_font": "Instrument Serif, Fraunces, serif",
+    "body_font": "Manrope, sans-serif",
+    "rules": {
+      "headings": "Use Instrument Serif with tracking-tight. Keywords inside headings MUST use italic styling for editorial flair.",
+      "overlines": "Uppercase, text-xs or text-sm, tracking-[0.25em], text-accent_sage.",
+      "sizes": {
+        "hero_h1": "text-5xl sm:text-7xl lg:text-8xl tracking-tighter leading-none font-normal",
+        "section_h2": "text-3xl sm:text-5xl lg:text-6xl tracking-tight font-serif",
+        "card_h3": "text-xl sm:text-2xl font-serif",
+        "body": "text-base sm:text-lg leading-relaxed font-sans"
+      }
+    }
+  },
+  "visual_enhancers": {
+    "noise_overlay": "Fixed viewport div with subtle SVG noise texture at opacity-5 pointer-events-none z-50",
+    "cursor": "Custom magnetic cursor circle that expands and lightens on interactive elements (a, button, cards)",
+    "grid_lines": "Thin 1px vertical/horizontal borders (border-sage/10) with section numbers 01 — 07 in editorial serif",
+    "alternating_sections": "Sections 01-05, 07 dark (#0E1412 / #151D1A); Section 06 Testimonios in warm bone/crema (#EFE9DF) with dark text (#0E1412) for visual cadence",
+    "glassmorphism": "backdrop-blur-xl bg-[#0E1412]/75 border border-[#8FAF9A]/20"
+  },
+  "three_js_3d_spine": {
+    "concept": "Abstract glass spine made of 12-16 rounded glass capsules (MeshTransmissionMaterial in Sage green #8FAF9A) with warm copper ambient light highlights.",
+    "scroll_behavior": "At initial state (Hero), capsules are misaligned and floating with subtle breathing motion. As user scrolls down, GSAP ScrollTrigger lerps capsule positions into a smooth, aligned S-curve vertebra column.",
+    "performance": "DPR capped at 1.5. Wrapped in React Suspense with elegant editorial loader. Simplified geometry or standard MeshPhysicalMaterial on mobile devices.",
+    "particles": "Sparse floating micro-particles with low opacity (0.2) in Sage green (#8FAF9A)."
+  },
+  "motion_rules": {
+    "easing": "power3.out / expo.out",
+    "durations": "0.8s - 1.2s",
+    "text_reveal": "Masked line-by-line or word-by-word reveal using Framer Motion / GSAP ScrollTrigger",
+    "horizontal_carousel": "Section 04 (Experiencia / Casos) pinned horizontal scroll driven by GSAP ScrollTrigger with fine progress bar",
+    "timeline_animation": "Section 05 (Formación) vertical Sage line that draws down on scroll and lights up nodes when scrolled past",
+    "prefers_reduced_motion": "Gracefully fallback to static opacity fade-ins when prefers-reduced-motion is true"
+  },
+  "sections_breakdown": [
+    {
+      "number": "01",
+      "name": "Inicio (Hero)",
+      "bg": "#0E1412",
+      "key_elements": "PAMELA GONZÁLEZ staggered letter mask reveal, FISIOTERAPEUTA subtitle, MOVIMIENTO · RECUPERACIÓN · BIENESTAR tag, CTA buttons 'Agendar una cita' (WhatsApp link) & 'Ver servicios', 3D Persistent Spine Canvas background, Animated scroll indicator"
+    },
+    {
+      "number": "02",
+      "name": "Sobre mí",
+      "bg": "#151D1A",
+      "key_elements": "Two-column editorial grid. Left: Initial badge frame with noise & border reveal. Right: Word-by-word scroll revealed quote in large italic serif. 3 Pillars with line icons: Evaluación integral, Tratamiento personalizado, Acompañamiento en el proceso"
+    },
+    {
+      "number": "03",
+      "name": "Servicios",
+      "bg": "#0E1412",
+      "key_elements": "Interactive hover-expandable editorial list (01-06): Evaluación fisioterapéutica, Descargas musculares, Rehabilitación mediante ejercicio, Readaptación física, Recuperación, Movilidad y flexibilidad. Row expansion on hover showing detailed description"
+    },
+    {
+      "number": "04",
+      "name": "Experiencia (Casos)",
+      "bg": "#151D1A",
+      "key_elements": "Pinned horizontal scroll carousel with 3-4 case cards (e.g., Readaptación de Rodilla en Atleta, Recuperación Post-quirúrgica Lumbar, Descarga & Prevención en Deportistas). Confidentiality note: 'Casos presentados de forma anónima y con consentimiento.' Fine progress line"
+    },
+    {
+      "number": "05",
+      "name": "Formación",
+      "bg": "#0E1412",
+      "key_elements": "Vertical timeline with animated drawing Sage line. Nodes for Licenciatura en Fisioterapia (Universidad Santa Paula), Bachillerato, Certificaciones en Terapia Manual & Readaptación. Placeholders for seminars & practical experience"
+    },
+    {
+      "number": "06",
+      "name": "Testimonios",
+      "bg": "#EFE9DF",
+      "text_color": "#0E1412",
+      "key_elements": "Light bone-white section contrasting with dark theme. Large italic serif testimonials quote carousel with smooth fade & blur transitions, minimal arrow controls + step counter (01/03)"
+    },
+    {
+      "number": "07",
+      "name": "Contacto & Footer",
+      "bg": "#0E1412",
+      "key_elements": "Huge headline 'Empecemos tu recuperación.' with key italic word. Direct contact info (Tel/WhatsApp +506 8984-6677). Interactive form pre-filling WhatsApp link (https://wa.me/50689846677). Large magnetic button 'Escribir por WhatsApp'. Minimal footer with copyright & back-to-top scroll trigger"
+    }
+  ],
+  "image_urls": {
+    "physiotherapy_treatment": "https://images.unsplash.com/photo-1706353399656-210cca727a33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxwaHlzaW90aGVyYXB5JTIwc3BpbmUlMjBtb3ZlbWVudHxlbnwwfHx8fDE3OTA1NjczNTF8MA&ixlib=rb-4.1.0&q=85",
+    "physiotherapy_leg_exam": "https://images.unsplash.com/photo-1649751361457-01d3a696c7e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHxfHxwaHlzaW90aGVyYXB5JTIwc3BpbmUlMjBtb3ZlbWVudHxlbnwwfHx8fDE3OTA1NjczNTF8MA&ixlib=rb-4.1.0&q=85",
+    "human_body_alignment": "https://images.unsplash.com/photo-1716996236828-18583f5abe5d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHxfHxodW1hbiUyMGJvZHklMjBtb3ZlbWVudCUyMGFsaWdubWVudCUyMHBvc3R1cmV8ZW58MHx8fHwxNzkwNTY3MzUxfDA&ixlib=rb-4.1.0&q=85",
+    "costa_rica_serene": "https://images.unsplash.com/photo-1658191700559-a38059e1da9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHxffHNlcmVuZSUyMGNvc3RhJTIwcmljYSUyMHRyb3BpY2FsJTIwYXJjaGl0ZWN0dXJlJTIwZGVzaWdufGVud3wwfHx8fDE3OTA1NjczNTF8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Ensure ALL UI elements and content are written in high-quality Spanish as requested.",
+    "Implement Lenis smooth scrolling for high-end feel.",
+    "Use @react-three/fiber and @react-three/drei for the 3D Spine canvas.",
+    "Ensure every interactive element has a proper data-testid attribute in kebab-case format.",
+    "Header navigation MUST be sticky/fixed with glassmorphism backdrop blur.",
+    "All contact form interactions directly build a WhatsApp link to https://wa.me/50689846677 with the custom message pre-filled."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Create distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (transition: all). Always specify target properties.",
+    "You MUST NOT center align the app container in CSS.",
+    "Always add data-testid attributes to buttons, inputs, links, and key items."
+  ]
+}
